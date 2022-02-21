@@ -1,4 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+.btn-start-app {
+  background-color: #1a1446;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+
 .footer {
   position:fixed;
   bottom:0;
@@ -7,6 +24,7 @@
   height: 90px;
   background-color: #1A1446;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -14,3 +32,6 @@
   width: 100%;
   background-color: #ffd000;
 }
+
+
+
