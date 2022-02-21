@@ -7,3 +7,10 @@
   height: 90px;
   background-color: #1A1446;
 }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffd000;
+}
