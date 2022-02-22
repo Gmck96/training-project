@@ -10,6 +10,9 @@ import { ConfirmationComponent } from './components/confirmation/confirmation.co
 import { FinalPageComponent } from './components/final-page/final-page.component';
 import { PopUpWindowComponent } from './components/pop-up-window/pop-up-window.component';
 import { ButtonComponent } from './components/button/button.component';
+import { WebcamModule} from "ngx-webcam";
+
+
 
 @NgModule({
   declarations: [
@@ -24,9 +27,10 @@ import { ButtonComponent } from './components/button/button.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    WebcamModule
   ],
   providers: [],
-  bootstrap: [ConfirmationComponent]
+  bootstrap: [FinalPageComponent]
 })
 export class AppModule { }

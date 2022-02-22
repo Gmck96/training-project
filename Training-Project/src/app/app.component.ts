@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WebcamImage} from "ngx-webcam";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Training-Project';
+  webcamImage: WebcamImage | undefined;
+  handleImage(webcamImage: WebcamImage){
+    this.webcamImage = webcamImage;
+  }
 }

@@ -1,1 +1,20 @@
-<p>scan-document works!</p>
+<div *ngIf="isCameraExist; else noCameraExist">
+  <div style="text-align: center">
+    <div class="btn-group">
+      <button class="button" (click)="takeSnapshot()">Take picture</button>
+      <button class="button" (click)="changeWebcam(true)">Toggle Camera</button>
+      <button class="button" (click)="onOffWebcam()">Switch Camera On/Off</button>
+
+    </div><br />
+    <webcam [height]="500" [width]="1000" [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam" [switchCamera]="nextWebcamObservable"></webcam>
+  </div>
+  <div *ngIf="errors.length > 0">
+    <h4>Error Messages:</h4>
+    <ul *ngFor="let error of errors">
+      <li>{{error | json}}</li>
+    </ul>
+  </div>
+</div>
+<ng-template #noCameraExist>
+  Camera Device Not Available
+</ng-template>
