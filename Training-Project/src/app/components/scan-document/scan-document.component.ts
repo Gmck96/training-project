@@ -1,6 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { WebcamImage, WebcamInitError, WebcamUtil} from "ngx-webcam";
 import { Observable, Subject} from "rxjs";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-scan-document',
@@ -18,7 +19,7 @@ export class ScanDocumentComponent implements OnInit {
   private nextWebcam: Subject<boolean | string> = new Subject<boolean | string>();
 
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     WebcamUtil.getAvailableVideoInputs()

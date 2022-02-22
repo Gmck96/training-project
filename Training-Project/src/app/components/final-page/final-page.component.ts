@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-final-page',
@@ -10,7 +11,7 @@ export class FinalPageComponent implements OnInit {
   pageTitle: string = 'App Final Page';
   private ImagePath: string;
 
-  constructor() {
+  constructor(private route: ActivatedRoute) {
     this.ImagePath = '/assets/images/ThankYou.jpeg'
   }
 
