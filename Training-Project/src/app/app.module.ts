@@ -30,6 +30,6 @@ import { WebcamModule} from "ngx-webcam";
     WebcamModule
   ],
   providers: [],
-  bootstrap: [ScanDocumentComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -14,14 +14,10 @@
 </div>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <body>
+<div style="height: 100px"></div>
+  <app-root></app-root>
+  <app-scan-document (getPicture)="handleImage($event)"></app-scan-document>
 
-<div class="container">
-<div class="text-right mb-3">
-  <button class="btn-start-app">Start Application</button>
-</div>
-</div>
-<button class="k">Ok</button>
-  <app-scan-document></app-scan-document>
 </body>
 <div class="footer"><div>
   © 2022 Liberty IT | Powered By Catalyst
