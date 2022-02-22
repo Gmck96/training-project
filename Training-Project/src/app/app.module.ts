@@ -27,6 +27,6 @@ import { ButtonComponent } from './components/button/button.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [FinalPageComponent]
 })
 export class AppModule { }
