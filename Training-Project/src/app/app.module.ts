@@ -28,6 +28,6 @@ import { ButtonComponent } from './components/button/button.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [WelcomePageComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
