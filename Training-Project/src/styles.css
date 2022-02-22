@@ -30,6 +30,10 @@
   width: 100%;
   background-color: #ffd000;
 }
-
+.footer-writing {
+  color: white;
+  text-align:center;
+  line-height: 90px;
+}
 
 
