@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinalPageComponent implements OnInit {
 
-  constructor() { }
+  pageTitle: string = 'App Final Page';
+  private ImagePath: string;
+
+  constructor() {
+    this.ImagePath = '/assets/images/ThankYou.jpeg'
+  }
 
   ngOnInit(): void {
   }
