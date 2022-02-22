@@ -8,8 +8,4 @@ import { WebcamImage} from "ngx-webcam";
 })
 export class AppComponent {
   title = 'Training-Project';
-  webcamImage: WebcamImage | undefined;
-  handleImage(webcamImage: WebcamImage){
-    this.webcamImage = webcamImage;
-  }
 }
