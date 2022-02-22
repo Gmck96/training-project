@@ -23,6 +23,32 @@
 html { font-size:8px}
 p{font-size: calc(1rem + 1vw); }
 
+#previewImg {
+  max-width: 100px;
+  max-height: 100px;
+}
 
+.dashed {
+  border-style: dashed;
+  text-align: center;
+  border-color: gray;
+  padding: 150px 20px;
+}
+.upload-line{
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
 
+.photo:after{
+  position: absolute;
+  content: '';
+  top: 100px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 20;
+}
 
+input#file{
+  text-decoration: none;
+}
