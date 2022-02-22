@@ -13,6 +13,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { WebcamModule} from "ngx-webcam";
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -5,23 +5,26 @@
   <title>TrainingProject</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.liberty.ico">
   <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<div class = "header">
-<nav><img src = "/assets/images/download.png" alt = "logo"></nav>
-</div>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<body>
-<div style="height: 100px"></div>
-  <app-root></app-root>
-  <app-scan-document (getPicture)="handleImage($event)"></app-scan-document>
 
-</body>
-<div class="footer"><div>
-  © 2022 Liberty IT | Powered By Catalyst
+<div class = "header">
+  <div class="logo">
+    <img src = "/assets/images/download.png">
+  </div>
 </div>
+
+<div class="content">
+  <app-root></app-root>
+</div>
+
+<div class="footer">
+  <div class ="footer-writing">
+   <p>© 2022 Liberty IT | Powered By Catalyst</p>
+  </div>
 </div>
 </body>
 </html>

@@ -1,0 +1,19 @@
+.btn-start-app{
+  background-color: #1a1446;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+welcome-page-footer {
+  border: 1px solid red;
+  display: flex;
+  justify-content: end;
+}
+
