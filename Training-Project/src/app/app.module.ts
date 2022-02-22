@@ -11,6 +11,7 @@ import { FinalPageComponent } from './components/final-page/final-page.component
 import { PopUpWindowComponent } from './components/pop-up-window/pop-up-window.component';
 import { ButtonComponent } from './components/button/button.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,6 @@ import { ButtonComponent } from './components/button/button.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [WelcomePageComponent]
 })
 export class AppModule { }
