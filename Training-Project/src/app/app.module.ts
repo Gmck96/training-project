@@ -9,6 +9,7 @@ import { ConfirmationComponent } from './components/confirmation/confirmation.co
 import { FinalPageComponent } from './components/final-page/final-page.component';
 import { PopUpWindowComponent } from './components/pop-up-window/pop-up-window.component';
 import { WebcamModule} from "ngx-webcam";
+import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 
 
 
@@ -20,6 +21,7 @@ import { WebcamModule} from "ngx-webcam";
     ConfirmationComponent,
     FinalPageComponent,
     PopUpWindowComponent,
+    WelcomePageComponent,
   ],
   imports: [
     BrowserModule,

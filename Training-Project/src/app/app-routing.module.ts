@@ -5,9 +5,10 @@ import {UploadDocumentComponent} from "./components/upload-document/upload-docum
 import {ConfirmationComponent} from "./components/confirmation/confirmation.component";
 import {FinalPageComponent} from "./components/final-page/final-page.component";
 import {ScanDocumentComponent} from "./components/scan-document/scan-document.component";
+import {WelcomePageComponent} from "./components/welcome-page/welcome-page.component";
 
 const routes: Routes = [
-  {path:'', component:AppComponent},
+  {path:'welcome', component:WelcomePageComponent},
   {path: 'upload', component:UploadDocumentComponent},
   {path: 'scan',component:ScanDocumentComponent},
   {path: 'confirmation', component:ConfirmationComponent},
