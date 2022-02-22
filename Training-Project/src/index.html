@@ -35,48 +35,18 @@
 </div>
 </div>
 
-<div class="container p-5 my-5">
-  <div class="card">
-    <div class="card-body">
-      Passport
-      <a style="float: right" href="#show-image" class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#show-image">Show File</a>
-      <div id="show-image" class="collapse">
-        <hr class="upload-line">
-        <div class="dashed">
-          <div class="e">
-          <h3>Choose a file or drag it here.</h3>
-          <form action="/examples/actions/confirmation.php" method="post">
-            <p>
-              <input class="photo" type="file" name="photo" onchange="previewFile(this);" required>
-            </p>
-            <img id="previewImg">
-
-          </form>
-          </div>
-        </div>
-        <div class="frame">
-          <div class="center">
-            <div class="title">
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    </div>
-  </div>
-
-  <app-root></app-root>
+<p>Ok</p>
+<p>Ok</p>
+<a routerLinkActive="upload">here</a>
+<router-outlet></router-outlet>
 <footer>Footer</footer>
 
 </body>
 <nav style="background-color: #ffd000; top: 0; left: 0;  position: fixed; width: 100%"><h1> <img src = "/assets/images/download.png" alt = "logo"></h1>Header</nav>
-  <app-root></app-root>
 <div class="footer">
 </div>
 
 <nav style="background-color: #ffd000; top: 0; left: 0;  position: fixed; width: 100%"><h1> <img src = "/assets/images/download.png" alt = "logo"></h1>Header</nav>
-  <app-root></app-root>
 <div class="footer">
 </div>
 </html>

@@ -47,3 +47,7 @@
   bottom: 0px;
   z-index: 20;
 }
+
+input#file{
+  text-decoration: none;
+}
