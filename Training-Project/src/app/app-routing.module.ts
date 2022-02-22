@@ -8,6 +8,7 @@ import {ScanDocumentComponent} from "./components/scan-document/scan-document.co
 import {WelcomePageComponent} from "./components/welcome-page/welcome-page.component";
 
 const routes: Routes = [
+  { path: '', redirectTo: '/welcome', pathMatch: 'full' },
   {path:'welcome', component:WelcomePageComponent},
   {path: 'upload', component:UploadDocumentComponent},
   {path: 'scan',component:ScanDocumentComponent},
