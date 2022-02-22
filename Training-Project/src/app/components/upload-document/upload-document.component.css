@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.btn-start-app {
+  background-color: #1a1446;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 90px;
+  background-color: #1A1446;
+}
+#previewImg {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.dashed {
+  border-style: dashed;
+  text-align: center;
+  border-color: gray;
+  padding: 150px 20px;
+}
+.upload-line{
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.photo:after{
+  position: absolute;
+  content: '';
+  top: 100px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 20;
+}
