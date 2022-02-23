@@ -45,6 +45,7 @@ export class ScanDocumentComponent implements OnInit {
   handleImage(webcamImage: WebcamImage){
     this.getPicture.emit(webcamImage);
     this.showWebcam = false;
+    this.webcamImage = webcamImage;
   }
   get triggerObservable(): Observable<void> {
     return this.trigger.asObservable();
