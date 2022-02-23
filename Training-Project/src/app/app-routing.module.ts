@@ -13,7 +13,8 @@ const routes: Routes = [
   {path: 'upload', component:UploadDocumentComponent},
   {path: 'scan',component:ScanDocumentComponent},
   {path: 'confirmation', component:ConfirmationComponent},
-  {path: 'final', component:FinalPageComponent}
+  {path: 'final', component:FinalPageComponent},
+  {path: '**', component: WelcomePageComponent}
 ];
 
 @NgModule({
