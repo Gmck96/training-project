@@ -932,8 +932,8 @@ a.link--nav:focus {
   border: 1px solid transparent;
   border-radius: 1em;
   font-size: 1em;
-  line-height: 2;
-  padding: 0 1.5em;
+  line-height: 2.5;
+  padding: 0 2.5em;
   filter: drop-shadow(0 3px 0 #06748c);
   background-color: #99e5ea;
   color: #1a1446;
