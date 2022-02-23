@@ -28,15 +28,10 @@
   </script>
 </head>
 <body style="background-color: #f8f9fa">
-<div class="container">
-  <nav style="background-color: #ffd000">Header</nav>
-  <div class="text-right mb-3">
-    <button class="btn-start-app">Start Application</button>
-  </div>
-</div>
 
-<div class="container p-5 my-5">
-  <div class="card">
+
+<div class="container">
+  <div class="card ">
     <div class="card-body">
       Passport
       <a style="float: right" href="#show-image" class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#show-image">Show File</a>
@@ -45,37 +40,24 @@
         <div class="dashed">
           <div class="e">
             <h3>Choose a file or drag it here.</h3>
-            <form action="/examples/actions/confirmation.php" method="post">
-              <p>
-                <input class="photo" type="file" name="photo" onchange="previewFile(this);" required>
-              </p>
-              <img id="previewImg">
-
-            </form>
-          </div>
-        </div>
-        <div class="frame">
-          <div class="center">
-            <div class="title">
+            <div class="fileUpload btn btn-light" >
+              <p>Upload</p>
+              <input id="uploadBtn" type="file" class="upload"  onchange="previewFile(this);" />
             </div>
+              <img id="previewImg">
           </div>
         </div>
-
       </div>
     </div>
   </div>
+  <p>ff</p>
 </div>
 
-<footer>Footer</footer>
+<div class="footer">
+  <p>Footer</p>
+</div>
 
 </body>
-<nav style="background-color: #ffd000; top: 0; left: 0;  position: fixed; width: 100%"><h1> <img src = "/assets/images/download.png" alt = "logo"></h1>Header</nav>
-<div class="footer">
-</div>
-
-<nav style="background-color: #ffd000; top: 0; left: 0;  position: fixed; width: 100%"><h1> <img src = "/assets/images/download.png" alt = "logo"></h1>Header</nav>
-<div class="footer">
-</div>
 </html>
 
 
