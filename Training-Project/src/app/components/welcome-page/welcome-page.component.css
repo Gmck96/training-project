@@ -17,19 +17,23 @@
   text-align: center;
 }
 .content-image {
-  width: 80%;
-  height: 800px;
-
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  border: 3px solid black;
+  display: inline-block;
 }
-/*.content{*/
-/*  width: 80%;*/
-/*  height: 0%;*/
-/*}*/
 
+.content {
+  text-align: center;
+  border: 1px solid red;
+}
 
 
 .welcome-page-footer {
   display: flex;
   justify-content: flex-end;
 }
+html { font-size:8px}
+p{font-size: calc(1rem + 1vw); }
 

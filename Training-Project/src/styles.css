@@ -8,19 +8,28 @@
 .header {
   background-color: #ffd100 ;
 }
-.footer{
-  position:fixed;
-  bottom: 0px;
-  background-color: #1A1446;
-  width: 100%;
-}
+
 .footer-writing {
   color: white;
   text-align:center;
-  line-height: 80px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.connect img{
+    height: 40px;
+    width: 40px;
 }
 
-html { font-size:8px}
-p{font-size: calc(1rem + 1vw); }
+.app-content {
+  min-height:80%;
+}
+
+.footer{
+  background-color: #1A1446;
+  width: 100%;
+}
+
+
 
 
