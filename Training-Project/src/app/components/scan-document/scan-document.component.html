@@ -1,9 +1,9 @@
 <div *ngIf="isCameraExist; else noCameraExist">
   <div style="text-align: center">
     <div class="btn-group" *ngIf="!taken">
-      <button class="button" (click)="takeSnapshot()">Take picture</button>
-      <button class="button" (click)="changeWebcam(true)">Toggle Camera</button>
-      <button class="button" (click)="onOffWebcam()">Switch Camera On/Off</button>
+      <button class="btn" (click)="takeSnapshot()">Take picture</button>
+      <button class="btn" (click)="changeWebcam(true)">Toggle Camera</button>
+      <button class="btn" (click)="onOffWebcam()">Switch Camera On/Off</button>
 
     </div><br />
     <webcam [height]="500" [width]="1000" [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam" [switchCamera]="nextWebcamObservable"></webcam>
@@ -23,7 +23,7 @@
 </div>
 <div *ngIf="taken">
   <h3>Are you happy with this image?</h3>
-  <button routerLink="/upload">YES</button><button (click)="resetPage()" >NO</button>
+  <button class="btn" routerLink="/upload">YES</button><button class="btn" (click)="resetPage()" >NO</button>
 </div>
 <ng-template #noCameraExist>
   Camera Device Not Available
