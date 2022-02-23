@@ -12,6 +12,8 @@ export class ScanDocumentComponent implements OnInit {
   @Output() getPicture = new EventEmitter<WebcamImage>();
   showWebcam = true;
   isCameraExist = true;
+  taken : boolean = false;
+  webcamImage: WebcamImage|undefined;
 
   errors: WebcamInitError[] = [];
   //webcam snapshot trigger
@@ -28,7 +30,8 @@ export class ScanDocumentComponent implements OnInit {
       });
   }
   takeSnapshot(): void {
-    this.trigger.next()
+    this.trigger.next();
+    this.taken = true;
   }
   onOffWebcam(): void {
     this.showWebcam = !this.showWebcam;
@@ -42,11 +45,17 @@ export class ScanDocumentComponent implements OnInit {
   handleImage(webcamImage: WebcamImage){
     this.getPicture.emit(webcamImage);
     this.showWebcam = false;
+    this.webcamImage = webcamImage;
   }
   get triggerObservable(): Observable<void> {
     return this.trigger.asObservable();
   }
   get nextWebcamObservable(): Observable<boolean | string> {
     return this.nextWebcam.asObservable();
+  }
+  resetPage(){
+    this.taken = false;
+    this.webcamImage = undefined;
+    this.showWebcam = true;
   }
 }
