@@ -10,21 +10,26 @@
   cursor: pointer;
   border-radius: 16px;
   font-size: 20px;
+  /*display: flex;*/
+  /*justify-content: center;*/
 }
 .content-title{
   text-align: center;
 }
 .content-image {
   width: 80%;
-  height: 80%;
-  overflow: hidden;
-}
-.content{
-  overflow: hidden;
-}
+  height: 800px;
 
-/*welcome-page-footer {*/
-/*  display: flex;*/
-/*  justify-content: end;*/
+}
+/*.content{*/
+/*  width: 80%;*/
+/*  height: 0%;*/
 /*}*/
+
+
+
+.welcome-page-footer {
+  display: flex;
+  justify-content: flex-end;
+}
 
