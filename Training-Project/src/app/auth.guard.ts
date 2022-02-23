@@ -18,6 +18,7 @@ export class AuthGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     if (!this.authService.allowedToProceed()){
       console.log("Not Allowed to continue")
+      this.router.navigate(['/welcome'], { queryParams: { returnUrl: state.url } });
       return false;
     }
     return true;
