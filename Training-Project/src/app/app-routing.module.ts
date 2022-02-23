@@ -6,15 +6,16 @@ import {ConfirmationComponent} from "./components/confirmation/confirmation.comp
 import {FinalPageComponent} from "./components/final-page/final-page.component";
 import {ScanDocumentComponent} from "./components/scan-document/scan-document.component";
 import {WelcomePageComponent} from "./components/welcome-page/welcome-page.component";
+import {AuthGuard} from "./auth.guard";
 
 const routes: Routes = [
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
-  {path:'welcome', component:WelcomePageComponent},
-  {path: 'upload', component:UploadDocumentComponent},
-  {path: 'scan',component:ScanDocumentComponent},
-  {path: 'confirmation', component:ConfirmationComponent},
-  {path: 'final', component:FinalPageComponent},
-  {path: '**', component: WelcomePageComponent}
+  {path:'welcome', component:WelcomePageComponent },
+  {path: 'upload', component:UploadDocumentComponent,canActivate: [AuthGuard],},
+  {path: 'scan',component:ScanDocumentComponent,canActivate: [AuthGuard],},
+  {path: 'confirmation', component:ConfirmationComponent,canActivate: [AuthGuard],},
+  {path: 'final', component:FinalPageComponent,canActivate: [AuthGuard],},
+  {path: '**', component: WelcomePageComponent},
 ];
 
 @NgModule({
