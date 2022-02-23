@@ -1,6 +1,6 @@
 <div *ngIf="isCameraExist; else noCameraExist">
   <div style="text-align: center">
-    <div class="btn-group">
+    <div class="btn-group" *ngIf="!taken">
       <button class="button" (click)="takeSnapshot()">Take picture</button>
       <button class="button" (click)="changeWebcam(true)">Toggle Camera</button>
       <button class="button" (click)="onOffWebcam()">Switch Camera On/Off</button>
