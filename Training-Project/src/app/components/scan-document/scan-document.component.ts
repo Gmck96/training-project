@@ -53,4 +53,9 @@ export class ScanDocumentComponent implements OnInit {
   get nextWebcamObservable(): Observable<boolean | string> {
     return this.nextWebcam.asObservable();
   }
+  resetPage(){
+    this.taken = false;
+    this.webcamImage = undefined;
+    this.showWebcam = true;
+  }
 }

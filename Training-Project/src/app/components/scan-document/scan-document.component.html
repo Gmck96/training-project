@@ -23,7 +23,7 @@
 </div>
 <div *ngIf="taken">
   <h3>Are you happy with this image?</h3>
-  <button>YES</button><button>NO</button>
+  <button routerLink="/upload">YES</button><button (click)="resetPage()" >NO</button>
 </div>
 <ng-template #noCameraExist>
   Camera Device Not Available
