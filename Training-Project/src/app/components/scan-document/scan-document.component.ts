@@ -3,6 +3,7 @@ import { WebcamImage, WebcamInitError, WebcamUtil} from "ngx-webcam";
 import { Observable, Subject} from "rxjs";
 import {ActivatedRoute} from "@angular/router";
 
+
 @Component({
   selector: 'app-scan-document',
   templateUrl: './scan-document.component.html',
@@ -14,11 +15,14 @@ export class ScanDocumentComponent implements OnInit {
   isCameraExist = true;
   taken : boolean = false;
   webcamImage: WebcamImage|undefined;
+  docType? :string;
+
 
   errors: WebcamInitError[] = [];
   //webcam snapshot trigger
   private trigger: Subject<void> = new Subject<void>();
   private nextWebcam: Subject<boolean | string> = new Subject<boolean | string>();
+
 
 
   constructor(private route: ActivatedRoute) { }
@@ -28,6 +32,10 @@ export class ScanDocumentComponent implements OnInit {
       .then((mediaDevices: MediaDeviceInfo[]) =>{
         this.isCameraExist = mediaDevices && mediaDevices.length >0;
       });
+    this.route.queryParams.subscribe(params => {
+      this.docType = params['docType'];
+    });
+
   }
   takeSnapshot(): void {
     this.trigger.next();
