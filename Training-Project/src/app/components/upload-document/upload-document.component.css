@@ -1,22 +1,30 @@
 
 #previewImg-passport {
   max-width: 300px;
-  max-height: 660px;
+  max-height: 400px;
+  background-position: center;
+  background-size: cover;
 }
 #previewImg-drivers{
   max-width: 300px;
-  max-height: 660px;
+  max-height: 400px;
+  background-position: center;
+  background-size: cover;
 }
 #previewImg-utility{
   max-width: 300px;
-  max-height: 660px;
+  max-height: 400px;
+  background-position: center;
+  background-size: cover;
 }
 
 .dashed {
   border-style: dashed;
   text-align: center;
   border-color: gray;
-  padding: 150px 460px;
+  padding: 50px 460px;
+  background-position: center;
+  background-size: cover;
 }
 .upload-line{
   margin-top: 3em;
@@ -33,6 +41,9 @@
   display:none;
 }
 
+.button-container{
+  padding-bottom: 15%;
+}
 
 
 
