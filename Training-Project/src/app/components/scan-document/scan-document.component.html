@@ -1,3 +1,14 @@
+<div class = "center">
+  <div class="pagination">
+    <!--    <a href="#">&laquo;</a>-->
+    <a href="/welcome" style="background-color: #06748c">Welcome!</a>
+    <a href="/scan" style="background-color: #99e5ea" >Scan Doc</a>
+    <a href="/upload">Upload Doc</a>
+    <a href="/confirmation">Confirmation</a>
+    <a href="/final">Thank You!</a>
+    <!--    <a href="#">&raquo;</a>-->
+  </div>
+</div>
 <div *ngIf="isCameraExist; else noCameraExist">
   <h2 style="text-align: center" *ngIf="!taken">Take a picture of your {{docType ? docType : "document"}}</h2>
   <div style="text-align: center">
