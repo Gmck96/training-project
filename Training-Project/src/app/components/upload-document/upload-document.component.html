@@ -8,31 +8,26 @@
 <body style="background-color: #f8f9fa">
 
 
-<div class="container">
+<div class="container my-5">
   <div class="card ">
     <div class="card-body">
-      Passport
-      <a style="float: right" href="#show-image" class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#show-image">Show File</a>
+      <a style="float: right" href="#show-image" class="btn btn-info my-1" data-bs-toggle="collapse" data-bs-target="#show-image">Show File</a>
+      <h3 class="photo-type" style="display: inline-block">Passport</h3>
       <div id="show-image" class="collapse">
         <hr class="upload-line">
+        <label>
         <div class="dashed">
-          <div class="e">
-            <h3>Choose a file or drag it here.</h3>
-            <div class="fileUpload btn btn-light" >
-              <p>Upload</p>
-              <input id="uploadBtn" type="file" class="upload"  onchange="previewFile(this);" />
-            </div>
+          <div class="update-photo">
+            <input id="uploadBtn" type="file" class="photo" name="photo" onchange="previewFile(this);" />
               <img id="previewImg">
+            <h3 id="choose">Click here or drag a file.</h3>
+
           </div>
         </div>
+        </label>
       </div>
     </div>
   </div>
-  <p>ff</p>
-</div>
-
-<div class="footer">
-  <p>Footer</p>
 </div>
 
 </body>

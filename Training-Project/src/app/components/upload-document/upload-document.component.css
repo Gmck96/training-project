@@ -1,27 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
 
-
-.btn-start-app {
-  background-color: #1a1446;
-  border: none;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-
-.footer {
-  position:fixed;
-  bottom:0;
-  left:0;
-  width:100%;
-  height: 90px;
-  background-color: #1A1446;
-}
 #previewImg {
   max-width: 100px;
   max-height: 100px;
@@ -31,11 +8,12 @@
   border-style: dashed;
   text-align: center;
   border-color: gray;
-  padding: 150px 20px;
+  padding: 150px 460px;
 }
 .upload-line{
   margin-top: 3em;
   margin-bottom: 2em;
+  margin-right:0.5em
 }
 
 .photo:after{
@@ -46,26 +24,18 @@
   left: 0px;
   bottom: 0px;
   z-index: 20;
+  outline: 5px dashed red;
+}
+.photo-type{
+  font-size: 2em;
 }
 
-.container{
-  padding-top: 5%;
-  padding-bottom: 40%;
+
+.update-photo input[type=file] {
+  display:none;
 }
 
-.fileUpload {
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-}
-.fileUpload input.upload {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  cursor: pointer;
-  opacity: 0;
-  filter: alpha(opacity=0);
+
+#upload_button input[type=file] {
+  display:none;
 }

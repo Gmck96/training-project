@@ -24,11 +24,16 @@
         }
 
         reader.readAsDataURL(file);
+        displayHide()
       }
+    }
+
+    function displayHide() {
+      document.getElementById("choose").style.visibility = "hidden";
     }
   </script>
 </head>
-<body>
+<body style="background-color: #f8f9fa">
 
 
 <div class = "header">
