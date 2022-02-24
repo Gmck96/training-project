@@ -27,7 +27,7 @@
 <div *ngIf="taken">
   <h3>Are you happy with this image?</h3>
   <div class="btn-group">
-  <button class="btn" routerLink="/upload">YES</button><button class="btn" (click)="resetPage()" >NO</button></div>
+  <button class="btn" routerLink="/upload" [queryParams]="{docType :docType }">YES</button><button class="btn" (click)="resetPage()" >NO</button></div>
 </div>
 <ng-template #noCameraExist>
   Camera Device Not Available
