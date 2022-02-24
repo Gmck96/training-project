@@ -13,24 +13,29 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script>
-    function previewFile(input){
-      var file = $("input[type=file]").get(0).files[0];
+   //previewImg-passport
 
-      if(file){
-        var reader = new FileReader();
-
-        reader.onload = function(){
-          $("#previewImg").attr("src", reader.result);
-        }
-
-        reader.readAsDataURL(file);
-        displayHide()
-      }
-    }
-
-    function displayHide() {
-      document.getElementById("choose").style.visibility = "hidden";
-      document.getElementById("dashed").style.padding = "50px 460px";
+   function add_image(e,photo,click_drag_message){
+     const reader = new FileReader();
+     reader.readAsDataURL(e.target.files[0]);
+     reader.onload = () => {
+       const preview = document.getElementById(photo);
+       displayHide(click_drag_message)
+       preview.src = reader.result;
+     };
+   }
+  /*\const reader = new FileReader();
+     reader.readAsDataURL(e.target.files[0]);
+     reader.onload = () => {
+       const preview = document.getElementById('previewImg-drivers');
+       preview.src = reader.result;
+     };*/
+    function displayHide(name) {
+      document.getElementById(name).style.visibility = "hidden";
+      ///document.getElementById("choose-drivers").style.visibility = "hidden";
+      //document.getElementById("dashed").style.padding = "50px 460px";
+      const collection = document.getElementsByClassName("dashed");
+      collection[0].style.padding = "50px 460px";
     }
   </script>
 </head>

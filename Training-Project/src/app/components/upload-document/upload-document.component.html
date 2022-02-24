@@ -8,28 +8,64 @@
 <body style="background-color: #f8f9fa">
 
 
-<div class="container my-5">
+<div class="container my-5" >
   <div class="card ">
     <div class="card-body">
-      <a style="float: right" href="#show-image" class="btn btn-info my-1" data-bs-toggle="collapse" data-bs-target="#show-image">Show File</a>
+      <a style="float: right" href="#show-passport" class="btn btn-info my-1" data-bs-toggle="collapse" data-bs-target="#show-passport">Show File</a>
       <h3 class="photo-type" style="display: inline-block">Passport</h3>
-      <div id="show-image" class="collapse">
+      <div id="show-passport" class="collapse">
         <hr class="upload-line">
         <label>
-        <div id="dashed">
+        <div class="dashed">
           <div class="update-photo">
-            <input id="uploadBtn" type="file" class="photo" name="photo" onchange="previewFile(this);" />
-              <img id="previewImg">
-            <h3 id="choose">Click here or drag a file.</h3>
-
+            <img id="previewImg-passport">
+            <input type="file" accept="image/*" onchange="add_image(event,'previewImg-passport','choose-passport')"/>
+            <h3 id="choose-passport">Click here or drag a file.</h3>
           </div>
         </div>
         </label>
       </div>
     </div>
   </div>
+
+  <div class="card ">
+    <div class="card-body">
+      <a style="float: right" href="#show-drivers" class="btn btn-info my-1" data-bs-toggle="collapse" data-bs-target="#show-drivers">Show File</a>
+      <h3 class="photo-type" style="display: inline-block">Driver's License</h3>
+      <div id="show-drivers" class="collapse">
+        <hr class="upload-line">
+        <label>
+          <div class="dashed">
+            <div class="update-photo">
+              <img id="previewImg-drivers">
+              <input type="file" accept="image/*" onchange="add_image(event,'previewImg-drivers','choose-drivers')"/>
+              <h3 id="choose-drivers">Click here or drag a file.</h3>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="card ">
+    <div class="card-body">
+      <a style="float: right" href="#show-utility" class="btn btn-info my-1" data-bs-toggle="collapse" data-bs-target="#show-utility">Show File</a>
+      <h3 class="photo-type" style="display: inline-block">Utility Bill</h3>
+      <div id="show-utility" class="collapse">
+        <hr class="upload-line">
+        <label>
+          <div class="dashed">
+            <div class="update-photo">
+              <img id="previewImg-utility">
+              <input type="file" accept="image/*" onchange="add_image(event,'previewImg-utility','choose-utility')"/>
+              <h3 id="choose-utility">Click here or drag a file.</h3>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
 </div>
-<p id="ll">easdsad</p>
 </body>
 </html>
 
