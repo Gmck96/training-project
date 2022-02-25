@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "express": "^4.17.3",
-    "ngx-webcam": "^0.4.1"
-  }
-}
